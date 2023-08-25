@@ -1,0 +1,138 @@
+/* REVIEWS */
+
+.reviews {
+    padding-top: 119px;
+    padding-bottom: 210px;
+}
+
+.reviews__bg {
+    background-image: url("../img/reviews/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.reviews__title {
+    margin-bottom: 67px;
+}
+
+.reviews__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 45px;
+    row-gap: 90px;
+}
+
+.reviews__item {
+    position: relative;
+
+}
+
+.reviews__img{
+    background-position: center center;
+    background-size: cover;
+}
+
+.reviews__bio {
+    position: relative;
+    width: 100%;
+    padding: 17px 0 22px 18px;
+
+    background-color: var(--blue);
+}
+
+.reviews__name-age {
+    margin-top: 0;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.reviews__name-age::selection{
+    color: var(--white);
+    background: var(--pink);
+}
+
+
+.reviews__name-age_opacity {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Кнопка */
+.audio__btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+    padding: 0;
+    height: 107px;
+    min-width: 52px;
+    transition: min-width 0.5s ease-in-out;
+}
+
+.audio__btn--active {
+    min-width: 100%;
+    transition: min-width 0.5s ease-in-out;
+}
+
+/* Линия времени плеера */
+
+.audio__progress-bar-container {
+    position: absolute;
+    bottom: 15px;
+    left: 15%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    height: 0;
+    background-color: var(--blue);
+    border-radius: 20px;
+    opacity: 0;
+    transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out ;
+}
+
+.audio__progress-bar-container_active {
+    width: 70%;
+    height: 36px;
+    bottom: -50px;
+    opacity: 1;
+    z-index: 1;
+    transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.5s ease-in-out, width 0.5s ease-in-out ;
+}
+
+.audio_bar {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 10px;
+
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.audio__line {
+    width: 0;
+    height: 10px;
+    border-radius: 20px;
+    background-color: var(--pink);
+}
+
+.btn-show-more{
+    position: absolute;
+    left: 45vw;
+    bottom: -20px;
+
+    display: none;
+    padding: 30px 35px;
+}

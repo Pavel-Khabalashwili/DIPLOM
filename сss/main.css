@@ -1,0 +1,174 @@
+/* ПОДКЛЮЧЕНИЕ СБРОСА СТИЛЕЙ */
+@import url("reset.css");
+
+/* ПОДКЛЮЧЕНИЕ ШРИФТОВ */
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter-Regular"),
+        url("../fonts/Regular/Inter-Regular.woff2") format("woff2"),
+        url("../fonts/Regular/Inter-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter-Medium"),
+        url("../fonts/Medium/Inter-Medium.woff2") format("woff2"),
+        url("../fonts/Medium/Inter-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter-Bold"),
+        url("../fonts/Bold/Inter-Bold.woff2") format("woff2"),
+        url("../fonts/Bold/Inter-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter-Black"),
+        url("../fonts/Black/Inter-Black.woff2") format("woff2"),
+        url("../fonts/Black/Inter-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --------------------------------------------------------- */
+
+
+/* БАЗОВЫЕ СТИЛИ */
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --btn-color: #FF8079;
+    --pink: #FF8079;
+    --blue: #92B7FF;
+    --white: #fff;
+}
+
+.page {
+    min-width: 320px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+
+    color: var(--white);
+
+    overflow-x: hidden;
+}
+
+/* --------------------------------------------------------- */
+
+/* ОСНОВНЫЕ СТИЛИ ДЛЯ ОБЩИХ ЭЛЕМЕНТОВ */
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1650px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section-title {
+
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 97px;
+
+    color: var(--white);
+}
+
+.section-descr {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+
+.section-offset {
+    margin-bottom: 100px;
+}
+
+.btn {
+    padding: 30px 64px;
+
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #fff;
+    background-color: var(--pink);
+}
+
+.stop-scroll{
+    overflow: hidden;
+}
+
+/* --------------------------------------------------------- */
+
+.pink::selection {
+    color: var(--white);
+    background: var(--pink);
+}
+.blue::selection {
+    color: var(--white);
+    background: var(--blue);
+}
+.white::selection {
+    color: var(--white);
+    background: var(--pink);
+}
+.blue-txt {
+    color: var(--blue);
+}
+.pink-txt {
+    color: var(--pink);
+}
+
+.hide-block{
+    display: none !important;
+}
+
+

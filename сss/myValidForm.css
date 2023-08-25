@@ -1,0 +1,15 @@
+/* Рестилинг форм валидации */
+.js-validate-error-label{
+    top: -35px;
+    left: 0;
+
+    padding: 4px 8px;
+    border-radius: 0px;
+
+    font-size: 20px;
+
+    background-color: var(--pink);
+
+    transition: all 0.3s linear;
+}
+

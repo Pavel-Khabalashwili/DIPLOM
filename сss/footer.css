@@ -1,0 +1,90 @@
+.footer {
+    background-color: var(--blue);
+    padding: 125px 0;
+}
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 50px;
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.footer__item {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+.footer__link::selection{
+    color: var(--blue);
+    background-color: var(--white);
+}
+.footer__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 38px;
+}
+
+.footer__form-descr {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+.footer__form-descr::selection{
+    color: var(--blue);
+    background-color: var(--white);
+}
+.form-mail {
+    display: flex;
+
+}
+.form-mail__input {
+    padding: 30px 0 30px 36px;
+
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: rgba(146, 183, 255, 0.6);
+    background-color: var(--white);
+}
+.form-mail__btn {
+    width: 78px;
+    padding: 0;
+}
+.footer__data-processing {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+.footer__data-processing::selection{
+    color: var(--blue);
+    background-color: var(--white)
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    row-gap: 126px;
+}
+.social__tel {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.social__tel::selection{
+    color: var(--blue);
+    background-color: var(--white)
+}
+.social__list {
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+}

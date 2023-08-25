@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- ПОДКЛЮЧЕНИЕ FAVICON -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+        <!-- ПОДКЛБЧЕНИЕ CCS -->
+        <!-- JustValidate -->
+        <link rel="stylesheet" href="./сss/justValidateTooltip.min.css">
+
+        <link rel="stylesheet" href="./сss/main.css">
+        <link rel="stylesheet" href="./сss/hvr-fcs-act.css">
+        <link rel="stylesheet" href="./сss/header.css">
+        <link rel="stylesheet" href="./сss/hero.css">
+        <link rel="stylesheet" href="./сss/contacts.css">
+        <link rel="stylesheet" href="./сss/map.css">
+        <link rel="stylesheet" href="./сss/footer.css">
+        <link rel="stylesheet" href="./сss/myValidForm.css">
+        <link rel="stylesheet" href="./сss/modal.css">
+        <link rel="stylesheet" href="./сss/media.css">
+
+        <!-- Animate.css -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!--  AOS Animate On Scroll Library  -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <title>ГЕНЕЗИС</title>
+    </head>
+
+    <body class="page">
+        <!-- ШАПКА -->
+        <header id = "header" class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="nav">
+
+                        <!-- Лого -->
+                        <div class="nav__logo">
+                            <a href="./index.html" class="nav__link">
+                                <img src="./img/header/logo.svg" alt="Лого" class="nav__img blue" data-aos="fade-down">
+                            </a>
+                        </div>
+
+                        <!-- Навигация -->
+                        <div class="header__nav">
+                            <ul class="nav__list list-reset" data-aos="fade-down">
+                                <li class="nav__item"><a href="./index.html" class="nav__link-item blue"> Главная</a></li>
+                                <li class="nav__item"><a  href="./services.html" class="nav__link-item blue">Курсы</a></li>
+                                <li class="nav__item"><a class="nav__link-item blue active-page">Контакты</a></li>
+                                <!-- <li class="nav__item"><a class="nav__link-item blue">О нас</a></li> -->
+                            </ul>
+                        </div>
+                        
+
+                        <!-- Бургер кнопка -->
+                        <button class="btn-reset burger" data-aos="fade-down">
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- ОСНОВНОЙ КОНТЕНТ -->
+        <main class="main">
+
+            <!-- Главная секция hero -->
+            <section class="hero">
+                <div class="container hero__container">
+                    <h1 class="hero__title section-title" data-aos="fade-up">КОНТАКТЫ</h1>
+                </div>
+            </section>
+
+            <section id="сontacts" class="contacts">
+                <div class="container">
+                    <div class="contacts__wrapper">
+                        <div class="contacts__info">
+                            <!-- Адресс -->
+                            <div class="contacts__adress flex-block">
+                                <p class="contacts__name">Адресс</p>
+                                <div class="contacts__content">
+                                    <p class="contacts__txt">
+                                        ЦМИТ «ГЕНЕЗИС. Дмитров» ул. Профессиональная д.4, ТЦ "ЮНОСТЬ", 3 этаж
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Телефон -->
+                            <div class="contacts__numbers flex-block">
+                                <p class="contacts__name">Телефон</p>
+                                <div class="contacts__content">
+                                    <p class="contacts__txt"><a href="tel:+79252054247">+7(925)205-42-47</a></p>
+                                    <p class="contacts__txt"><a href="tel:+74994040188">+7(499)404-01-88</a></p>
+                                </div>
+                            </div>
+                            <!-- mail -->
+                            <div class="contacts__mail flex-block">
+                                <p class="contacts__name">Email</p>
+                                <div class="contacts__content">
+                                    <p class="contacts__txt"><a href="mailto:cmit.genesis@yandex.ru">cmit.genesis@yandex.ru</a></p>
+                                </div>
+                            </div>
+                            <!-- График -->
+                            <div class="contacts__schedule flex-block">
+                                <p class="contacts__name">График</p>
+                                <div class="contacts__content">
+                                    <p class="contacts__txt">
+                                        вт-вс с 10 до 19
+                                        пн - выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map ymaps-layers-pane" id="map"></div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <!-- ПОДВАЛ -->
+        <footer class="footer" data-aos="fade-up">
+            <div class="container">
+
+                <div class="footer__wrapper">
+
+                    <!-- Лево -->
+                    <div class="footer_nav">
+                        <ul class="footer__list ">
+                            <li class="footer__item">
+                                <a href="#header" class="footer__link fcs-outline-in-white">Главная</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#сontacts" class="footer__link fcs-outline-in-white">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Середина -->
+                    <div class="footer__form animate__animated animate__delay-1s" id="target">
+                        <a href="#header" class="footer__logo fcs-outline-in-white ">
+                            <img src="./img/footer/footer_logo.svg" alt="Лого" class="blue">
+                        </a>
+                        <p class="footer__form-descr">подписаться на&nbsp;рассылку</p>
+                        <!-- action="#" method="post" -->
+                        <form  class="form-mail js-form-spam">
+
+                            <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="GENESIS">
+                            <input type="hidden" name="admin_email" value="mvke_money@mail.ru">
+                            <input type="hidden" name="form_subject" value="Footer contacts spam form">
+                            <!-- END Hidden Required Fields -->
+
+                            <div class="just-validate-tooltip-container">
+                                <input type="email" name ="email пользователя" data-validate-field="mail" placeholder = "Ваша электронная почта" class="form-mail__input">
+                            </div>
+                            <button type="submit" class="form-mail__btn btn btn-reset fcs-ripple-out">
+                                <svg class="form-mail__arrow-img" width="16" height="29" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 2L13 14.5L2 27" stroke="white" stroke-width="4"/>
+                                </svg>
+                            </button>
+                        </form>
+
+                        <p class="footer__data-processing">
+                            Нажимая на&nbsp;стрелочку, вы&nbsp;соглашаетесь на&nbsp;обработку данных
+                        </p>
+                    </div>
+
+                    <!-- Правая -->
+                    <div class="social">
+                        <a href="tel:+74994040188" class="social__tel">+7 (499) 404-01-88</a>
+                        <a href="tel:+79252054247" class="social__tel">+7 (925) 205-42-47</a>
+
+                        <ul class="social__list list-reset">
+
+                            <!-- Telegram -->
+                            <li class="social__item">
+                                <a href="https://t.me/genesisbest" class="social__link">
+                                    <svg width="33" height="27" viewBox="0 0 33 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.26739 11.6232C11.1278 7.81329 17.0353 5.30132 19.99 4.08734C28.4292 0.622381 30.1833 0.0199889 31.3259 0.000189109C31.5776 -0.00401084 32.1398 0.0601888 32.5038 0.349385C32.8108 0.595382 32.8959 0.928376 32.936 1.16177C32.9978 1.55223 33.0149 1.94832 32.987 2.34256C32.5294 7.0861 30.551 18.5999 29.5439 23.9111C29.1184 26.1586 28.2791 26.911 27.4671 26.9866C25.7045 27.1468 24.3625 25.8353 22.6527 24.7289C19.9785 22.9985 18.4675 21.9209 15.871 20.2319C12.8703 18.2802 14.8159 17.2074 16.5256 15.4542C16.9729 14.9952 24.749 8.01429 24.8991 7.38009C24.918 7.30089 24.9356 7.0057 24.7575 6.8497C24.5794 6.6937 24.3181 6.7471 24.1285 6.7897C23.8602 6.8497 19.5874 9.63766 11.3101 15.1536C10.097 15.9756 8.99849 16.3756 8.01468 16.3536C6.92916 16.3302 4.842 15.7476 3.29031 15.2496C1.38731 14.6388 -0.125484 14.316 0.00823041 13.2792C0.0758979 12.74 0.828952 12.188 2.26739 11.6232Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <!-- VK -->
+                            <li class="social__item ">
+                                <a href="https://vk.com/genesis_dm" class="social__link">
+                                    <svg width="39" height="24" viewBox="0 0 39 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.2285 23.976C7.91199 23.976 0.316479 14.985 0 0H6.67041C6.88951 10.981 11.8071 15.5844 15.7022 16.5914V0.0239766H21.9831V9.49451C25.8296 9.08692 29.8708 4.77123 31.2341 0.0239766H37.515C37.0103 2.49262 35.9929 4.83186 34.5266 6.89484C33.0603 8.95782 31.1768 10.7 28.9944 12.012C31.4275 13.2005 33.5772 14.8834 35.3019 16.9498C37.0265 19.0161 38.2869 21.419 39 24H32.0618C31.4252 21.7539 30.129 19.7432 28.3358 18.2203C26.5427 16.6974 24.3326 15.7304 21.9831 15.4406V24L21.2285 23.976Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <!-- INST -->
+                            <li class="social__item">
+                                <a href="https://www.instagram.com/cmit_genesis/" class="social__link">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26 9C26 10.1046 25.1046 11 24 11C22.8954 11 22 10.1046 22 9C22 7.89543 22.8954 7 24 7C25.1046 7 26 7.89543 26 9Z" fill="white"/>
+                                        <path d="M30.9707 9.82008C30.9004 8.22602 30.6427 7.13022 30.2733 6.18058C29.8924 5.17263 29.3064 4.27023 28.5386 3.52002C27.7884 2.75816 26.88 2.16613 25.8837 1.79117C24.9287 1.42196 23.8385 1.16409 22.2445 1.09389C20.6385 1.01758 20.1287 1 16.0557 1C11.9826 1 11.4728 1.01758 9.87282 1.08791C8.27881 1.15823 7.18296 1.41621 6.23361 1.78519C5.22537 2.16613 4.32296 2.75218 3.57276 3.52002C2.81089 4.27017 2.21915 5.17855 1.8439 6.17484C1.47469 7.13022 1.21689 8.22016 1.14662 9.8141C1.07037 11.4201 1.05273 11.9299 1.05273 16.0029C1.05273 20.076 1.07037 20.5859 1.14064 22.1858C1.21097 23.7798 1.46895 24.8756 1.83822 25.8253C2.21915 26.8332 2.81089 27.7356 3.57276 28.4858C4.32296 29.2477 5.23134 29.8397 6.22763 30.2147C7.1829 30.5839 8.27284 30.8418 9.86713 30.912C11.4668 30.9825 11.9769 30.9999 16.05 30.9999C20.123 30.9999 20.6328 30.9825 22.2328 30.912C23.8268 30.8417 24.9227 30.584 25.872 30.2147C26.8691 29.8292 27.7746 29.2396 28.5306 28.4837C29.2865 27.7278 29.8762 26.8223 30.2617 25.8253C30.6307 24.87 30.8888 23.7798 30.959 22.1858C31.0294 20.5859 31.0469 20.076 31.0469 16.0029C31.0469 11.9299 31.041 11.42 30.9707 9.82008ZM28.2692 22.0686C28.2046 23.5337 27.9585 24.3249 27.7534 24.8523C27.2493 26.1592 26.212 27.1965 24.9051 27.7006C24.3776 27.9058 23.5807 28.1518 22.1213 28.2161C20.539 28.2867 20.0644 28.304 16.0616 28.304C12.0588 28.304 11.5783 28.2867 10.0017 28.2161C8.53656 28.1518 7.74539 27.9058 7.21794 27.7006C6.5676 27.4602 5.97563 27.0793 5.49507 26.5812C4.99692 26.0947 4.61599 25.5087 4.37559 24.8583C4.17047 24.3308 3.92439 23.5337 3.8601 22.0745C3.78954 20.4922 3.77219 20.0174 3.77219 16.0146C3.77219 12.0118 3.78954 11.5313 3.8601 9.95493C3.92439 8.4898 4.17047 7.69863 4.37559 7.17119C4.61599 6.52055 4.99692 5.9287 5.50104 5.44802C5.98723 4.94987 6.57329 4.56894 7.22392 4.32883C7.75137 4.12372 8.54851 3.87757 10.0077 3.81305C11.59 3.74272 12.0648 3.72514 16.0673 3.72514C20.0761 3.72514 20.5506 3.74272 22.1273 3.81305C23.5924 3.87763 24.3836 4.12366 24.911 4.32877C25.5614 4.56894 26.1534 4.94987 26.6339 5.44802C27.132 5.9345 27.513 6.52055 27.7534 7.17119C27.9585 7.69863 28.2046 8.49549 28.2691 9.95493C28.3394 11.5373 28.357 12.0118 28.357 16.0146C28.357 20.0174 28.3395 20.4862 28.2692 22.0686Z" fill="white" stroke="white"/>
+                                        <path d="M16 9C12.1355 9 9 12.1353 9 16C9 19.8647 12.1355 23 16 23C19.8646 23 23 19.8647 23 16C23 12.1353 19.8646 9 16 9ZM16 20.5407C13.4929 20.5407 11.4592 18.5073 11.4592 16C11.4592 13.4927 13.4929 11.4593 15.9999 11.4593C18.5073 11.4593 20.5407 13.4927 20.5407 16C20.5407 18.5073 18.5072 20.5407 16 20.5407Z" fill="white" stroke="white" stroke-width="0.5"/>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <!-- Mail -->
+                            <li class="social__item">
+                                <a href="mailto:cmit.genesis@yandex.ru" class="social__link">
+                                    <svg width="37" height="24" viewBox="0 0 37 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75537" y="0.650391" width="31.1328" height="23.3496" rx="4" fill="white"/>
+                                        <path d="M1.64343 1.76172L17.697 14.6046C18.0622 14.8968 18.5812 14.8968 18.9464 14.6046L35 1.76172" stroke="#92B7FF" stroke-width="4"/>
+                                    </svg>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- ПОДКЛБЧЕНИЕ JS -->
+        <!-- VIDE.JS -->
+        <script src="./js/libs/jquery-3.7.0.min.js"></script>
+        <script src="./js/libs/jquery.vide.min.js"></script>
+        <!--  AOS Animate On Scroll Library -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Подключение inputmask -->
+        <script src="./js/libs/inputmask.min.js"></script>
+        <!-- Подключение just-validate -->
+        <script src="./js/libs/just-validate.min.js"></script>
+        <!-- Подключение карты -->
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=8c87648f-7783-4d8b-8a1d-def83ae60c99&lang=ru_RU"></script>
+        <!-- My JS -->
+        <script src="./js/js-AOS-INIT.js"></script>
+        <script src="./js/js-nav-anim.js"></script>
+        <script src="./js/js-social-&-logo-anim.js"></script>
+        <script src="./js/js-social-tel-anim.js"></script>
+        <script src="./js/js-burger-anim.js"></script>
+        <script src="./js/js-btn-anim.js"></script>
+        <script src="./js/js-valid-spam.js"></script>
+        <script src="./js/js-video-contacts.js"></script>
+        <script src="./js/js-find-traget.js"></script>
+        <script src="./js/js-map.js"></script>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+.services__container {
+    padding-top: 100px;
+    padding-bottom: 100px;  
+}
+.services__title{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.services__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 370px));
+    grid-gap: 45px;
+    justify-content: center;
+}
+.services__item {
+    position: relative;
+    max-width: 370px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+}
+.services__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.services__img::selection{
+    color: var(--white);
+    background: var(--pink);
+}
+
+.services__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 107px;
+    padding: 17px 0 0 20px;
+    background-color: var(--blue);
+}
+.services__txt {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+.services__txt::selection{
+    color: var(--white);
+    background: var(--pink);
+}
+
+/* SERVICES MODAL */
+
+.modal__content-wrapper{
+    display: flex;
+    gap: 25px;
+}
+.modal__title{
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 50px;
+    color: var(--white);
+}
+.modal__title::selection{
+    color: var(--white);
+    background: var(--pink);
+}
+
+.modal__txt{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.modal__txt::selection{
+    color: var(--white);
+    background: var(--pink);
+}
+
+.services__img-modal{
+    max-width: 200px;
+}
+.services__img-modal::selection{
+    color: var(--white);
+    background: var(--pink);
+}
+
+.services__hide-block{
+    display: none;
+}
+
+
+/* FORM - MODAL */
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.form__input {
+    padding: 15px 0 15px 20px;
+    border: 4px solid var(--pink);
+
+    max-width: 300px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: rgba(255, 128, 121, 0.6);
+    background-color: var(--white);
+}
+.form__btn {
+    width: 100%;
+    padding: 10px 15px;
+
+    font-size: 20px;
+}
+
+.js-validate-error-label{
+    font-size: 15px !important;
+}

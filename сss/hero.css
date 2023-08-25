@@ -1,0 +1,12 @@
+.hero{
+    height: 800px;
+}
+
+.hero__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero__title{}

@@ -1,0 +1,25 @@
+.map{
+    width: 580px;
+    height: 580px;
+	border: 1px solid black;
+	border: 20px;
+	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+[class*="copyrights-pane"] {
+	display: none !important;
+}
+
+.ymaps-layers-pane {
+
+	filter: hue-rotate(90deg);  
+
+	-ms-filter: hue-rotate(90deg);
+
+	-webkit-filter: hue-rotate(90deg);
+
+	-moz-filter: hue-rotate(90deg);
+
+	-o-filter: hue-rotate(90deg);
+
+}

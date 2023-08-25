@@ -1,0 +1,27 @@
+/* TEST */
+.test {
+    margin: 172px 0;
+}
+.test__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.test__content {
+    max-width: 749px;
+}
+.test__title {
+    margin-bottom: 50px;
+}
+.test__descr {
+    margin-bottom: 85px;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+
+}
+
+.test__img{
+    display: flex;
+}

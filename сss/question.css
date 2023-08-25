@@ -1,0 +1,55 @@
+/* QUESTION */
+
+.question {
+    padding: 124px 0 160px 0;
+}
+.question__bg{
+    background-image: url("../img/questions/book.jpg");
+    background-repeat: no-repeat;
+    background-size: 32% auto;
+    background-position-x: 100%;
+    background-position-y: center;
+}
+.question__wrapper {
+    max-width: 1000px;
+}
+.question__title {
+    margin-bottom: 45px;
+}
+
+.question__title::selection{
+    
+}
+
+.question__wrapper .question__descr {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+
+}
+.question__descr + .question__descr{
+    margin: 0;
+    margin-bottom: 65px;
+}
+
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+}
+.form__input {
+    padding: 30px 0 30px 36px;
+    width: 408px;
+    border: 4px solid var(--pink);
+
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: rgba(255, 128, 121, 0.6);
+}
+.form__btn {
+    width: 408px;
+}
